@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StickersTemplate.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:StickersTemplate.Configuration.BundleConfig">
+            <summary>
+            Bundle Config class
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Register Bundles
+            For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
+            </summary>
+            <param name="bundles">Bundles</param>
+        </member>
+        <member name="T:StickersTemplate.Configuration.FilterConfig">
+            <summary>
+            Filter Config
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            Register Global Filters
+            </summary>
+            <param name="filters">Filters</param>
+        </member>
+        <member name="T:StickersTemplate.Configuration.RouteConfig">
+            <summary>
+            Route Config
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Register Routes
+            </summary>
+            <param name="routes">Routes</param>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Startup">
+            <summary>
+            Startup
+            </summary>
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Startup.ConfigureAuth(Owin.IAppBuilder)">
+            <summary>
+            Configure Auth
+            </summary>
+            <param name="app">App</param>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            Configuration
+            </summary>
+            <param name="app">App</param>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Controllers.AccountController">
+            <summary>
+            Account Controller
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.AccountController.SignIn">
+            <summary>
+            Sign In
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.AccountController.SignOut">
+            <summary>
+            Sign Out
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.AccountController.SignOutCallback">
+            <summary>
+            Sign Out Callback
+            </summary>
+            <returns>Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.AccountController.InvalidUser(System.String)">
+            <summary>
+            Invalid User
+            </summary>
+            <param name="upn">upn of unauthorized user</param>
+            <returns>Action Result</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Controllers.StickersController">
+            <summary>
+            Stickers Controller
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Controllers.StickersController"/> class.
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Index">
+            <summary>
+            GET: Stickers
+            </summary>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Create">
+            <summary>
+            GET: Stickers/Create
+            </summary>
+            <returns>Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Create(StickersTemplate.Configuration.Models.StickerViewModel)">
+            <summary>
+            POST: Stickers/Create
+            To protect from overposting attacks, please enable the specific properties you want to bind to, for
+            more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+            </summary>
+            <param name="stickerViewModel">Sticker View Model</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Edit(System.String)">
+            <summary>
+            GET: Stickers/Edit/5
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Edit(StickersTemplate.Configuration.Models.StickerViewModel)">
+            <summary>
+            POST: Stickers/Edit/5
+            To protect from overposting attacks, please enable the specific properties you want to bind to, for
+            more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+            </summary>
+            <param name="stickerViewModel">Sticker View Model</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Delete(System.String)">
+            <summary>
+            GET: Stickers/Delete/5
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.DeleteConfirmed(System.String)">
+            <summary>
+            POST: Stickers/Delete/5
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.DeletePermanentlyConfirmed(System.String)">
+            <summary>
+            POST: Stickers/DeletePermanently/5
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Controllers.StickersController.Publish">
+            <summary>
+            POST: Stickers/Publish
+            </summary>
+            <returns>Task Action Result</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.ErrorHandler.AiHandleErrorAttribute">
+            <summary>
+            Application Insights error filter
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.ErrorHandler.AiHandleErrorAttribute.OnException(System.Web.Mvc.ExceptionContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:StickersTemplate.Configuration.MvcApplication">
+            <summary>
+            Mvc Application
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.MvcApplication.Application_Start">
+            <summary>
+            Application Start
+            </summary>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Models.Sticker">
+            <summary>
+            Sticker
+            </summary>
+        </member>
+        <member name="F:StickersTemplate.Configuration.Models.Sticker.MaximumDimensionInPixels">
+            <summary>
+            Maximum dimension of a sticker in pixels
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.ImageUri">
+            <summary>
+            Gets or sets ImageUri
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.Keywords">
+            <summary>
+            Gets or sets Keywords
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.Index">
+            <summary>
+            Gets or sets Index
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.Sticker.State">
+            <summary>
+            Gets or sets State
+            </summary>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Models.StickerState">
+            <summary>
+            Sticker State
+            </summary>
+        </member>
+        <member name="F:StickersTemplate.Configuration.Models.StickerState.Default">
+            <summary>
+            Default
+            </summary>
+        </member>
+        <member name="F:StickersTemplate.Configuration.Models.StickerState.Active">
+            <summary>
+            Active
+            </summary>
+        </member>
+        <member name="F:StickersTemplate.Configuration.Models.StickerState.SoftDeleted">
+            <summary>
+            SoftDeleted
+            </summary>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Models.StickerViewModel">
+            <summary>
+            Sticker View Model
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Models.StickerViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Models.StickerViewModel"/> class.
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Models.StickerViewModel.#ctor(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Models.StickerViewModel"/> class.
+            </summary>
+            <param name="sticker">Sticker</param>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.ImageUri">
+            <summary>
+            Gets or sets ImageUri
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.Keywords">
+            <summary>
+            Gets or sets Keywords
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.Index">
+            <summary>
+            Gets or sets Index
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.State">
+            <summary>
+            Gets or sets State
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Models.StickerViewModel.File">
+            <summary>
+            Gets or sets File
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Models.StickerViewModel.GetKeywordsList">
+            <summary>
+            Get Keywords List
+            </summary>
+            <returns>Keywords List</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.AzureTableSticker">
+            <summary>
+            Azure Table Sticker
+            </summary>
+        </member>
+        <member name="F:StickersTemplate.Configuration.Providers.AzureTableSticker.DefaultPartitionKey">
+            <summary>
+            Default Partition Key
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.AzureTableSticker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Providers.AzureTableSticker"/> class.
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.AzureTableSticker.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Providers.AzureTableSticker"/> class.
+            </summary>
+            <param name="id">Id</param>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.AzureTableSticker.#ctor(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Providers.AzureTableSticker"/> class.
+            </summary>
+            <param name="sticker">Sticker</param>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.AzureTableSticker.ImageUrl">
+            <summary>
+            Gets or sets ImageUrl
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.AzureTableSticker.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.AzureTableSticker.Keywords">
+            <summary>
+            Gets or sets Keywords
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.AzureTableSticker.Index">
+            <summary>
+            Gets or sets Index
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.AzureTableSticker.State">
+            <summary>
+            Gets or sets State
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.AzureTableSticker.ToSticker">
+            <summary>
+            To Sticker
+            </summary>
+            <returns>Sticker</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.BlobStore">
+            <summary>
+            Blob Storage
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.BlobStore.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Providers.BlobStore"/> class.
+            </summary>
+            <param name="connectionString">Connection String</param>
+            <param name="containerName">Container Name</param>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.BlobStore.UploadBlobAsync(System.String,System.IO.Stream)">
+            <summary>
+            Upload Blob Async
+            </summary>
+            <param name="name">Name</param>
+            <param name="inputStream">Input Stream</param>
+            <returns>Task Uri</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.BlobStore.DeleteBlobAsync(System.String)">
+            <summary>
+            Delete Blob Async
+            </summary>
+            <param name="name">Name</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.BlobStore.InitializeAsync(System.String,System.String)">
+            <summary>
+            Initialize Async
+            </summary>
+            <param name="connectionString">Connection String</param>
+            <param name="containerName">Container Name</param>
+            <returns>Task</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.IBlobStore">
+            <summary>
+            Blob Store Interface
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IBlobStore.UploadBlobAsync(System.String,System.IO.Stream)">
+            <summary>
+            Upload Blob Async
+            </summary>
+            <param name="name">Name</param>
+            <param name="inputStream">Input Stream</param>
+            <returns>Task Uri</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IBlobStore.DeleteBlobAsync(System.String)">
+            <summary>
+            Delete Blob Async
+            </summary>
+            <param name="name">Name</param>
+            <returns>Task</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.IStickerStore">
+            <summary>
+            Sticker Store Interface
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.GetStickersAsync">
+            <summary>
+            Get Stickers Async
+            </summary>
+            <returns>List of Sticker</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.GetStickerAsync(System.String)">
+            <summary>
+            Get Sticker Async
+            </summary>
+            <param name="id">Id</param>
+            <returns>Sticker</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.UpdateStickersAsync(System.Collections.Generic.IList{StickersTemplate.Configuration.Models.Sticker})">
+            <summary>
+            Update Stickers Async
+            </summary>
+            <param name="stickers">List of Sticker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.UpdateStickerAsync(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Update Sticker Async
+            </summary>
+            <param name="sticker">Sticker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.DeleteStickerAsync(System.String)">
+            <summary>
+            Delete Sticker Async
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.IStickerStore.CreateStickerAsync(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Create Sticker Async
+            </summary>
+            <param name="sticker">Sticker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.Serialization.StickerConfigDTO">
+            <summary>
+            Model describing the <see cref="T:StickersTemplate.Configuration.Providers.Serialization.StickerConfigDTO"/> object.
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.Serialization.StickerConfigDTO.Images">
+            <summary>
+            Gets or sets the images in this app.
+            </summary>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.Serialization.StickerDTO">
+            <summary>
+            Model describing the <see cref="T:StickersTemplate.Configuration.Providers.Serialization.StickerDTO"/> object.
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.Serialization.StickerDTO.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.Serialization.StickerDTO.ImageUri">
+            <summary>
+            Gets or sets the image uri.
+            </summary>
+        </member>
+        <member name="P:StickersTemplate.Configuration.Providers.Serialization.StickerDTO.Keywords">
+            <summary>
+            Gets or sets the keywords.
+            </summary>
+        </member>
+        <member name="T:StickersTemplate.Configuration.Providers.StickerStore">
+            <summary>
+            Sticker Store
+            </summary>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StickersTemplate.Configuration.Providers.StickerStore"/> class.
+            </summary>
+            <param name="connectionString">Connection String</param>
+            <param name="tableName">Table Name</param>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.GetStickerAsync(System.String)">
+            <summary>
+            Get Sticker Async
+            </summary>
+            <param name="id">Id</param>
+            <returns>Task Sticker</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.DeleteStickerAsync(System.String)">
+            <summary>
+            Delete Sticker Async
+            </summary>
+            <param name="stickerId">Sticker Id</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.GetStickersAsync">
+            <summary>
+            Get Sticker Async
+            </summary>
+            <returns>List of Sticker</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.UpdateStickerAsync(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Update Sticker Async
+            </summary>
+            <param name="sticker">Sticker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.CreateStickerAsync(StickersTemplate.Configuration.Models.Sticker)">
+            <summary>
+            Create Sticker Async
+            </summary>
+            <param name="sticker">Stricker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.UpdateStickersAsync(System.Collections.Generic.IList{StickersTemplate.Configuration.Models.Sticker})">
+            <summary>
+            Update Stickers Async
+            </summary>
+            <param name="stickers">List of Sticker</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:StickersTemplate.Configuration.Providers.StickerStore.IsSuccessCode(System.Int32)">
+            <summary>
+            Validates if the success code was success or not.
+            </summary>
+            <param name="httpStatusCode">The status code to be validated.</param>
+            <returns>true if the httpStatusCode is successful, false otherwise.</returns>
+        </member>
+    </members>
+</doc>
