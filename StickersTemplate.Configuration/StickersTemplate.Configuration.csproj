@@ -342,6 +342,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\andyhungsticker-config - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\custom-stickers-20220829 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\stickersdeploytest1-config - Web Deploy.pubxml" />
   </ItemGroup>

@@ -9,7 +9,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NameOfLastUsedPublishProfile>C:\git\2x3o\microsoft-teams-apps-stickers\StickersTemplate.Configuration\Properties\PublishProfiles\custom-stickers-20220829 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\chhung\Source\Repos\microsoft-teams-apps-stickers\StickersTemplate.Configuration\Properties\PublishProfiles\andyhungsticker-config - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
